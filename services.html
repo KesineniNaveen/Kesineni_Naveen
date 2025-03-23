@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Kesineni Naveen</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .services-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .service-container {
+            width: 23%;
+            background: rgba(85, 107, 47, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .service-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+        }
+        body {
+            background: #87CEFA;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+        .services-section {
+            padding: 50px;
+        }
+        .service-container h2 {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Freelance Services</h1>
+    </header>
+    <section class="services-section">
+        <h2>What I Offer</h2>
+        <div class="services-wrapper">
+            <div class="service-container" onclick="showContactDetails()">
+                <h2>📊 Data Analysis</h2>
+                <p>Providing in-depth data analysis, visualization, and insights to help businesses make data-driven decisions.</p>
+            </div>
+            <div class="service-container" onclick="showContactDetails()">
+                <h2>🛢️ SQL Development</h2>
+                <p>Expert in writing optimized SQL queries, database design, and query performance tuning.</p>
+            </div>
+            <div class="service-container" onclick="showContactDetails()">
+                <h2>📈 BI Development</h2>
+                <p>Building interactive dashboards and reports using Power BI, DAX, and data modeling.</p>
+            </div>
+            <div class="service-container" onclick="showContactDetails()">
+                <h2>🐍 Python Development</h2>
+                <p>Developing data processing scripts, automation, and machine learning models using Python.</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        function showContactDetails() {
+            alert('Contact Me:\n📱 WhatsApp: 916303076905\n📧 Gmail: kesineninaveen1908@gmail.com\n📷 Instagram: @kesineni_naveen\n💼 LinkedIn: https://www.linkedin.com/in/www.linkedin.com/in/naveen-kesineni-0560bb31a');
+        }
+        console.log("Services page loaded successfully");
+    </script>
+</body>
+</html>

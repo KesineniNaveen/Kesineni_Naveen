@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 40px; }
+        pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; text-align: left; overflow-x: auto; }
+        .nav-buttons { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h2>Project 3: Data Processing with SQL</h2>
+    
+    <h3>Power BI Dashboard</h3>
+    <iframe title="Power BI Dashboard" width="100%" height="600" 
+            src="https://app.powerbi.com/view?r=YOUR_EMBED_LINK" 
+            frameborder="0" allowFullScreen="true"></iframe>
+    <p>If the dashboard does not load, <a href="https://app.powerbi.com/view?r=YOUR_EMBED_LINK" target="_blank">click here</a> to open it in Power BI.</p>
+    
+    <h3>SQL Queries</h3>
+    <pre>
+        <code>
+        SELECT category, SUM(revenue) as total_revenue 
+        FROM sales_data 
+        GROUP BY category 
+        ORDER BY total_revenue DESC;
+        </code>
+    </pre>
+    
+    <a href="project3_queries.sql" download>Download SQL Queries</a>
+    
+    <div class="nav-buttons">
+        <a href="project2.html"><button>Previous</button></a>
+    </div>
+</body>
+</html>
